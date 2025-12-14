@@ -1,0 +1,25 @@
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(107, 124, 255, 0.06),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 60%,
+      rgba(107, 124, 255, 0.04),
+      transparent 45%
+    ),
+    #0b0e14;
+
+  background-size: 200% 200%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ambient-bg {
+    animation: ambientAnimation 60s ease-in-out infinite;
+  }
+}

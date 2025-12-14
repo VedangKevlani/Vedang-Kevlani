@@ -1,0 +1,53 @@
+.contact {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+
+.text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  color: var(--text-muted);
+  max-width: 420px;
+  margin-bottom: 2rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.links a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+}
+
+.links a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Photo */
+.photoWrapper {
+  max-width: 360px;
+}
+
+.photoWrapper img {
+  width: 100%;
+  display: block;
+  filter: grayscale(20%);
+}

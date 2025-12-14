@@ -1,0 +1,83 @@
+.heading {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--bg-panel);
+  padding: 2rem;
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-left-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Modal */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal {
+  background: var(--bg-panel);
+  padding: 3rem;
+  max-width: 600px;
+  width: 90%;
+}
+
+.modalMeta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+}
+
+.outcomes {
+  list-style: square;
+  margin-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.close {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+

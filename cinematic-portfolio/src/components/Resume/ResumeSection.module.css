@@ -1,0 +1,29 @@
+.resumeSection {
+  background-color: var(--bg-panel);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.resumeSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resumeSection p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.downloadButton {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--accent);
+  color: var(--text-main);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.downloadButton:hover {
+  background-color: var(--accent);
+  color: var(--bg-panel);
+}

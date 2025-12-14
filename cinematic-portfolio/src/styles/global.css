@@ -1,0 +1,49 @@
+:root {
+--bg-dark: #0b0e14;        /* Deep night */
+--bg-panel: #111827;      /* Subtle elevation */
+--text-main: #e5e7eb;     /* Soft white */
+--text-muted: #9ca3af;   /* Intelligence gray */
+--accent: #6b7cff;       /* Cold indigo */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 6rem 10vw;
+}
+
+section {
+  background: linear-gradient(135deg, #0b0e14 0%, #111827 100%);
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0.3; }
+}
+
+.animate-flicker {
+  animation: flicker 2s infinite;
+}
+
+@keyframes scanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+.animate-[scanline_6s_linear_infinite] {
+  animation: scanline 6s linear infinite;
+}

@@ -1,0 +1,57 @@
+.heading {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+}
+
+.panel {
+  background-color: var(--bg-panel);
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Metrics */
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Skills */
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bar {
+  height: 6px;
+  background-color: #1f2937;
+}
+
+.fill {
+  height: 100%;
+  background-color: var(--accent);
+}
