@@ -44,3 +44,35 @@
   color: var(--bg-dark);
   box-shadow: 0 0 18px rgba(107, 124, 255, 0.7);
 }
+
+/* Responsive: convert to bottom nav on small screens */
+@media (max-width: 768px) {
+  .side-menu {
+    top: auto;
+    right: 50%;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    flex-direction: row;
+    padding: 6px 8px;
+    gap: 8px;
+    font-size: 0.85rem;
+    background: transparent;
+    z-index: 60;
+    pointer-events: auto;
+  }
+
+  .side-menu a {
+    padding: 8px 12px;
+    border-radius: 9999px;
+    backdrop-filter: blur(6px);
+  }
+
+  /* add safe-area inset for devices with home indicator */
+  .side-menu { padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+}
+
+@media (max-width: 420px) {
+  .side-menu { gap: 6px; font-size: 0.78rem; }
+  .side-menu a { padding: 6px 10px; }
+}

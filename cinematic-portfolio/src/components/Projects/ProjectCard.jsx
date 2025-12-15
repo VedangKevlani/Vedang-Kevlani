@@ -11,13 +11,7 @@ export default function ProjectCard({ project, onOpen }) {
         src={project.thumbnail}
         alt={project.title}
         className={styles.thumbnail}
-        style={{
-          width: '100%',           // fill card width
-          height: '200px',         // fixed height for uniform cards
-          objectFit: 'cover',      // crop/scale image to cover area
-          borderRadius: '8px',     // optional, rounded corners
-          display: 'block'         // removes extra spacing
-        }}
+        loading="lazy"
       />
       <h3>{project.title}</h3>
       <p className={styles.tech}>
