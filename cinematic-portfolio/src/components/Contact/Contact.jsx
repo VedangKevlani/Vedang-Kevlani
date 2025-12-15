@@ -26,11 +26,7 @@ export default function Contact({ id }) {
               </li>
               <li>
                 <a>
-                  <p>Languages Spoken: English, Hindi, Sindhi, Spanish</p>
-                  <English>English</English>
-                  <Hindi>Hindi</Hindi>
-                  <Sindhi>Sindhi</Sindhi>
-                  <Spanish>Spanish</Spanish>
+                  Languages Spoken: English, Hindi, Sindhi, Spanish
                 </a>
               </li>
 
