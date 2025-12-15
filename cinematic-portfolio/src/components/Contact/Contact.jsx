@@ -24,6 +24,15 @@ export default function Contact({ id }) {
                   kevlanivedang28@gmail.com
                 </a>
               </li>
+              <li>
+                <a>
+                  <p>Languages Spoken: English, Hindi, Sindhi, Spanish</p>
+                  <English>English</English>
+                  <Hindi>Hindi</Hindi>
+                  <Sindhi>Sindhi</Sindhi>
+                  <Spanish>Spanish</Spanish>
+                </a>
+              </li>
 
               <li>
                 <a

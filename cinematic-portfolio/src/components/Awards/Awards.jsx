@@ -24,6 +24,21 @@ const awards = [
     title: '1st Place - JAIA Christmas Hackathon: Financial Literacy',
     issuer: 'JAIA',
     year: '2024'
+  },
+  {
+    title: '2nd Place - Productivity Innovation Awards',
+    issuer: 'Jamaica Productivity Centre',
+    year: '2024'
+  },
+  {
+    title: '1st Place - KRWTronics Machine Learning Challenge',
+    issuer: 'KRWTronics',
+    year: '2024'
+  },
+  {
+    title: 'First Tech Challenge Jamaica Inspire Award',
+    issuer: 'First Tech Challenge Robotics',
+    year: '2022'
   }
 ]
 
