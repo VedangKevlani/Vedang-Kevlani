@@ -40,7 +40,8 @@ const projects = [
     thumbnail: '/hopefield.jpg',
     description:
       'A content management system for school websites, allowing staff to manage pages, events, and resources efficiently.',
-    outcomes: [
+      projectLink: 'https://hopefieldprep.vercel.app/',
+      outcomes: [
       'Simplified website management',
       'Responsive, fast-loading design',
       'Integrated news and events system'
@@ -55,6 +56,7 @@ const projects = [
     thumbnail: '/taino.jpg',
     description:
       'A website for the Taino Heritage Camp to manage registrations, communications, and camp activities.',
+    projectLink: 'https://tainoheritagecamp.netlify.app/',
     outcomes: [
       'Streamlined registration process',
       'Automated notifications via Twilio',
@@ -70,7 +72,7 @@ const projects = [
     thumbnail: '/finny.jpg',
     description:
       'An assistant to help users track expenses, set goals, and improve financial literacy.',
-    outcomes: [
+      outcomes: [
       'Interactive budgeting tools',
       'Goal tracking system',
       'Firebase integration for real-time updates'
@@ -85,6 +87,7 @@ const projects = [
     thumbnail: '/onepot.png',
     description:
       'A subscription based service offering meal prep packages for students and professionals, reducing cleanup and cooking time. Visit Link: https://project-onepot.vercel.app/',
+    projectLink: 'https://project-onepot.vercel.app/',
     outcomes: [
       'Online ordering system',
       'Community engagement features',
@@ -111,7 +114,7 @@ const videos = [
   },
   {
     title: 'Taino Heritage Site: Web Experience for Cultural Preservation (Demo in Post)',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7374209400091070467/?originTrackingId=6NdKf81tTzSJj2R7nbxWnA%3D%3D',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7374209400091070467',
     thumbnail: '/taino.jpg',
   },
   {

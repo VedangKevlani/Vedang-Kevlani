@@ -19,12 +19,25 @@ export default function ProjectModal({ project, onClose }) {
         {project.videoLink && (
           <div className={styles.videoWrapper}>
             <iframe
-              src={project.videoLink}
+              src={`${project.videoLink}${project.videoLink.includes('?') ? '&autoplay=1' : '?autoplay=1'}`}
               title={project.title}
               allow="autoplay; encrypted-media; fullscreen"
               alt={project.title}
               allowFullScreen
             ></iframe>
+          </div>
+        )}
+
+        {project.projectLink && (
+          <div className={styles.linkedinWrapper} style={{ marginTop: '1rem' }}>
+            <a
+              href={project.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.viewLinkedIn}
+            >
+              Visit Project
+            </a>
           </div>
         )}
 

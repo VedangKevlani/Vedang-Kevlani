@@ -7,27 +7,37 @@ import './LinkedInVideoLightbox.css';
 const videos = [
   {
     title: 'Neural Hands: ASL to English Translation using Deep Learning',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7386537763203948544/?originTrackingId=IkfcLRrXT3OlfPd8gIdgXw%3D%3D',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7386537763203948544',
     thumbnail: '/neuralHands.jpg',
   },
   {
+    title: 'Project OnePot: Vincent Hosang Venture Finals (Demo in Post)',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:share:7305388739852193793',
+    thumbnail: '/onepot.png',
+  }
+  {
     title: 'Yaad: AI Price Intelligence for Real Estate',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7328884745042300928/?originTrackingId=PNgav0CtR%2BKqhu0Q%2FcdtiA%3D%3D',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7328884745042300928',
     thumbnail: '/yaad.jpg',
   },
   {
     title: 'Hopefield School: A CMS supporting Jamaican Education',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7402081312725159936/?originTrackingId=TYiNVtw4SmGWqjTlCI11yw%3D%3D',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7402081312725159936',
     thumbnail: '/hopefield.jpg',
-  },
+  }
   {
     title: 'Taino Heritage Site: Web Experience for Cultural Preservation',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7374209400091070467/?originTrackingId=vSx9KBB3TRaMlZA%2FcJCfog%3D%3D',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7374209400091070467',
     thumbnail: '/taino.jpg',
   },
   {
+    title: 'Project OnePot: Vincent Hosang Venture Finals (Demo in Post)',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:share:7305388739852193793',
+    thumbnail: '/onepot.png',
+  }
+  {
     title: 'Finny: Budgeting and Financial Literacy App',
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7277796671449665538/?originTrackingId=vSMgLpiIT5iEVUkiwXNLjA%3D%3D',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7277796671449665538',
     thumbnail: '/finny.jpg',
   }
 ];
@@ -57,7 +67,7 @@ export default function LinkedInVideoLightbox() {
           >
             <div className="video-wrapper">
               <iframe
-                src={`${vid.link}?autoplay=1`}
+                src={`${vid.link}${vid.link.includes('?') ? '&autoplay=1' : '?autoplay=1'}`}
                 width="560"
                 height="315"
                 allow="autoplay; encrypted-media"
