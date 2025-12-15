@@ -25,7 +25,8 @@ const projects = [
     thumbnail: '/yaad.jpg',
     description:
       'Analyzes rental prices using machine learning to provide intelligent insights for students and professionals.',
-    outcomes: [
+    projectLink: 'https://yaad-smart-rental-advisor.vercel.app/',
+      outcomes: [
       'Accurate rental price prediction',
       'Interactive dashboard for insights',
       'Supported multiple property types'
