@@ -1,5 +1,6 @@
 import styles from './ResumeSection.module.css'
 import Reveal from '../Reveal/Reveal'
+import React from "react"
 
 export default function ResumeSection({ id }) {
   return (

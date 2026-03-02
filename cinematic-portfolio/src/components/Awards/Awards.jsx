@@ -1,4 +1,6 @@
 import styles from './Awards.module.css'
+import React from "react"
+
 const awards = [
   {
     title: 'Intellibus AI Hackathon Top 12: Fixing Broken Experiences',

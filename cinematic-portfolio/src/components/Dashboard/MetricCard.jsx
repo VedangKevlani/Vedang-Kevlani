@@ -1,4 +1,5 @@
 import styles from './Dashboard.module.css'
+import React from "react"
 
 export default function MetricCard({ label, value }) {
   return (

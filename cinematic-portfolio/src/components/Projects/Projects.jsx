@@ -4,6 +4,7 @@ import Reveal from '../Reveal/Reveal'
 import { useState } from 'react'
 import projects from './projectsData'
 import ProjectModal from './ProjectModal'
+import React from "react"
 
 export default function Projects({ id }) {
   const [activeProject, setActiveProject] = useState(null)

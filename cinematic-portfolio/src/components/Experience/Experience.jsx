@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from './Experience.module.css'
+import React from "react"
 
 const experienceData = [
   {

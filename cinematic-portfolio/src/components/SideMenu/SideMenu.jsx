@@ -13,18 +13,18 @@ const sections = [
 
 export default function SideMenu() {
   const [active, setActive] = useState('hero')
+  const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY
       sections.forEach(section => {
         const el = document.getElementById(section.id)
-        if (el) {
-          const offsetTop = el.offsetTop
-          const offsetBottom = offsetTop + el.offsetHeight
-          if (scrollPos >= offsetTop - 100 && scrollPos < offsetBottom - 100) {
-            setActive(section.id)
-          }
+        if (!el) return
+        const offsetTop = el.offsetTop
+        const offsetBottom = offsetTop + el.offsetHeight
+        if (scrollPos >= offsetTop - 120 && scrollPos < offsetBottom - 120) {
+          setActive(section.id)
         }
       })
     }
@@ -32,30 +32,42 @@ export default function SideMenu() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleNav = (id) => {
+    setOpen(false)
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
-<nav className="side-menu">
-  <span
-    className="side-menu-indicator"
-    style={{ transform: `translateY(${sections.findIndex(s => s.id === active) * 2.4}rem)` }}
-  />
+    <>
+      {/* Hamburger (mobile only) */}
+      <button className="menu-toggle" onClick={() => setOpen(!open)}>
+        <span />
+        <span />
+        <span />
+      </button>
 
-  {sections.map(section => (
-    <a
-      key={section.id}
-      href={`#${section.id}`}
-      className={active === section.id ? 'active' : ''}
-      onClick={(e) => {
-        e.preventDefault()
-        document
-          .getElementById(section.id)
-          ?.scrollIntoView({ behavior: 'smooth' })
-      }}
-    >
-      {section.label}
-    </a>
-  ))}
-</nav>
+      <nav className={`side-menu ${open ? 'open' : ''}`}>
+        <span
+          className="side-menu-indicator"
+          style={{
+            transform: `translateY(${sections.findIndex(s => s.id === active) * 2.8}rem)`
+          }}
+        />
 
-
+        {sections.map(section => (
+          <a
+            key={section.id}
+            href={`#${section.id}`}
+            className={active === section.id ? 'active' : ''}
+            onClick={(e) => {
+              e.preventDefault()
+              handleNav(section.id)
+            }}
+          >
+            {section.label}
+          </a>
+        ))}
+      </nav>
+    </>
   )
 }

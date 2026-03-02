@@ -2,6 +2,7 @@ import styles from './Dashboard.module.css'
 import Reveal from '../Reveal/Reveal'
 import MetricCard from './MetricCard'
 import SkillBar from './SkillBar'
+import React from "react"
 
 export default function Dashboard({ id }) {
   return (

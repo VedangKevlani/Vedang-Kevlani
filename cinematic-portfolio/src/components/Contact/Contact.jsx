@@ -1,5 +1,6 @@
 import styles from './Contact.module.css'
 import Reveal from '../Reveal/Reveal'
+import React from "react"
 
 export default function Contact({ id }) {
   return (

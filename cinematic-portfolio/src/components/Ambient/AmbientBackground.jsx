@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import './ambient.css'
+import React from "react"
 
 export default function AmbientBackground() {
   return (
