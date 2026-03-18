@@ -15,9 +15,9 @@ export default function Dashboard({ id }) {
         {/* Metrics */}
         <Reveal>
           <div className={styles.panel}>
-            <MetricCard label="Projects Delivered" value="10+" />
-            <MetricCard label="Datasets Analyzed" value="12+" />
-            <MetricCard label="Models Deployed" value="5+" />
+            <MetricCard label="Projects Delivered" value="15+" />
+            <MetricCard label="Datasets Analyzed" value="20+" />
+            <MetricCard label="Models Deployed" value="10+" />
             <MetricCard label="Domains Worked In" value="6" />
           </div>
         </Reveal>

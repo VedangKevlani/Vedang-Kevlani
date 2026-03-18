@@ -1,7 +1,11 @@
 import styles from './Projects.module.css'
+import React from 'react'
 
 export default function ProjectModal({ project, onClose }) {
   if (!project) return null
+
+  // Ensure outcomes is always an array to prevent crashes
+  const outcomes = project.outcomes || []
 
   return (
     <div className={styles.overlay} onClick={onClose}>
@@ -16,13 +20,12 @@ export default function ProjectModal({ project, onClose }) {
           {project.description}
         </p>
 
-        {project.videoLink && (
+        {project.videoLink && typeof project.videoLink === 'string' && (
           <div className={styles.videoWrapper}>
             <iframe
               src={`${project.videoLink}${project.videoLink.includes('?') ? '&autoplay=1' : '?autoplay=1'}`}
               title={project.title}
               allow="autoplay; encrypted-media; fullscreen"
-              alt={project.title}
               allowFullScreen
             ></iframe>
           </div>
@@ -42,7 +45,7 @@ export default function ProjectModal({ project, onClose }) {
         )}
 
         <ul className={styles.outcomes}>
-          {project.outcomes.map((item, i) => (
+          {outcomes.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
         </ul>

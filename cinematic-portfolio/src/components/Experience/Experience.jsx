@@ -4,6 +4,16 @@ import React from "react"
 
 const experienceData = [
   {
+    role: 'Developer',
+    company: 'DotClass Technology Solutions',
+    year: '2026',
+  },
+  {
+    role: 'Founder and Content Strategist',
+    company: 'CTRL Learn',
+    year: '2025',
+  },
+  {
     role: 'Investment Client Services Intern',
     company: 'Sagicor Group Jamaica Limited',
     year: '2025',

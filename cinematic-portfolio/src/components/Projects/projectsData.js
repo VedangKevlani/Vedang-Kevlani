@@ -95,10 +95,30 @@ const projects = [
       'Community engagement features',
       'Authentic cookbook access'
     ]
+  },
+  {
+    id: 7,
+    title: 'ARGUS: Automated Recognition and Geo-tracking Unified System',
+    year: '2026',
+    role: 'AI Engineer',
+    tech: ['React', 'TypeScript', 'MobileNetv2'],
+    thumbnail: '/argus.jpg',
+    description:
+      'A person of interest identifier for missing and wanted persons.',
+    outcomes: [
+      'Live camera feed detects persons of interest',
+      'Find matches camera feed finds subjects in groups or backgrounds',
+      'AI Aging shows how a subject could look in future'
+    ]
   }
 ]
 
 const videos = [
+  {
+    title: 'ARGUS: Automated Recognition and Geo-tracking Unified System',
+    link: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7439333883243982848',
+    thumbnail: '/argus.jpg',
+  },
   {
     title: 'Neural Hands: ASL to English Translation using Deep Learning (Demo in Post)',
     link: 'https://www.linkedin.com/embed/feed/update/urn:li:activity:7386537763203948544',

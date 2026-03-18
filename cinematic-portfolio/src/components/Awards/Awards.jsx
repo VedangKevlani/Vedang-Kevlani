@@ -3,6 +3,11 @@ import React from "react"
 
 const awards = [
   {
+    title: 'Intellibus AI Hackathon 1st Place: Build, Innovate, Win',
+    issuer: 'Intellibus',
+    year: '2026'
+  },
+  {
     title: 'Intellibus AI Hackathon Top 12: Fixing Broken Experiences',
     issuer: 'Intellibus',
     year: '2025'
