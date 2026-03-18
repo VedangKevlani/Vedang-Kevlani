@@ -98,7 +98,7 @@ const projects = [
   },
   {
     id: 7,
-    title: 'ARGUS: Automated Recognition and Geo-tracking Unified System',
+    title: 'ARGUS: Automated Recognition and Geo-tracking Unified System (Demo in Post)',
     year: '2026',
     role: 'AI Engineer',
     tech: ['React', 'TypeScript', 'MobileNetv2'],
