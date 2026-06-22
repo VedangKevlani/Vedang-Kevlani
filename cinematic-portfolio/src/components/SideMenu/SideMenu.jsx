@@ -32,6 +32,11 @@ export default function SideMenu() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [open])
+
   const handleNav = (id) => {
     setOpen(false)
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -45,6 +50,11 @@ export default function SideMenu() {
         <span />
         <span />
       </button>
+
+      <div
+        className={`side-menu-backdrop ${open ? 'open' : ''}`}
+        onClick={() => setOpen(false)}
+      />
 
       <nav className={`side-menu ${open ? 'open' : ''}`}>
         <span
