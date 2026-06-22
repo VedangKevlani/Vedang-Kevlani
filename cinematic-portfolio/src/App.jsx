@@ -21,7 +21,7 @@ function App() {
       {/* Main content above DotGrid */}
       <div className="relative z-10">
         {!stepperCompleted ? (
-          <div className="container mx-auto px-4 py-8">
+          <div className="intake-screen container mx-auto px-4 py-8">
             <Stepper
               initialStep={1}
               backButtonText="Previous"

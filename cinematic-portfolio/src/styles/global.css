@@ -64,6 +64,14 @@ body {
   overflow-x: hidden;
 }
 
+.intake-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section {
   padding: 6rem 10vw;
 }
