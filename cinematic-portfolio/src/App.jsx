@@ -17,7 +17,7 @@ function App() {
   const [stepperCompleted, setStepperCompleted] = React.useState(false);
 
   return (
-    <div className="relative bg-black text-white min-h-screen">
+    <div className="relative min-h-screen">
       {/* Main content above DotGrid */}
       <div className="relative z-10">
         {!stepperCompleted ? (
